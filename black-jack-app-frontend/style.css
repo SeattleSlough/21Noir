@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poller+One');
+@import url('https://fonts.googleapis.com/css?family=Economica');
+
+body {
+    background: black;
+}
+img {
+    filter: grayscale(100%);
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    grid-row: 1/2;
+    grid-column: 1/9;
+}
+div {
+    color: white;
+}
+
+#player {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#player h3 {
+    grid-column: 1/5;
+}
+
+#player div {
+    grid-row: 2;
+}
+
+#dealer {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#dealer div {
+    grid-row: 2;
+}
+
+#dealer h3 {
+    grid-column: 1/5;
+}
+#split {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#split div {
+    grid-row: 2;
+}
+
+header {
+    background: gray;
+    display: grid;
+    grid-row: 0;
+    grid-column: 1/9;
+    font-family: 'Poller One';
+    font-size: 350%;
+
+}
+
+#headerdiv {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(200, 1fr);
+    position: relative
+}
+
+#p21 {
+    grid-column: 13/24;
+    grid-row: 1;
+    color: black;
+    position: absolute;
+    z-index: 2
+}
+
+#chip {
+    padding: 18px;
+    position: absolute;
+    z-index: 1;
+}
+
+#pNoir {
+    grid-column: 37;
+    grid-row: 1;
+}
+
+#headerBet {
+    grid-column: 90/200;
+    font-size: 65%;
+    padding: 38px
+}
+
+.wrapper { 
+    background: black;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#anchor {
+    background: black;
+    text-align: center;
+    display: grid;
+    grid-row: 3/5;
+    grid-column: 3/7;
+    font-family: 'Economica';
+    font-size: 200%;
+}
+
+.userData {
+    background: black;
+    text-align: center;
+    display: grid;
+    grid-row: 3/5;
+    grid-column: 3/7;
+    font-family: 'Economica';
+    font-size: 200%;
+}
+
+.container {
+    background: black;
+    text-align: center;
+    display: grid;
+    grid-row: 3/5;
+    grid-column: 3/7;
+    font-family: 'Economica';
+    font-size: 200%;
+}
+
+#gameplay {
+    font-family: 'Economica';
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#gameplay img {
+    width: 100px;
+}
